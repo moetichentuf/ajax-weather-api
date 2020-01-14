@@ -74,18 +74,39 @@
         let ky = "fb61890e1a785b8d58a331dc8c156528c13123c10adcbda1b81fd451b15523b0";
 
 
-      let lala =  fetch('https://api.unsplash.com/search/photos?query='+ inpt + "&client_id="+ky)
+      fetch('https://api.unsplash.com/search/photos?query='+ inpt + "&client_id="+ky)
             .then((response) => {
                 return response.json();
             })
             .then((myJson) => {
                 // Background images articles
-                let backgroundImage = myJson['results'][1]['urls']['regular'];
-                document.getElementById("day1").style.backgroundImage = 'url('+backgroundImage+')';
-                document.getElementById("day2").style.backgroundImage = 'url('+backgroundImage+')';
-                document.getElementById("day3").style.backgroundImage = 'url('+backgroundImage+')';
-                document.getElementById("day4").style.backgroundImage = 'url('+backgroundImage+')';
-                document.getElementById("day5").style.backgroundImage = 'url('+backgroundImage+')';
+
+
+
+
+
+                // image 1
+                let backgroundImage1 = myJson['results'][0]['urls']['regular'];
+                document.getElementById("day1").style.backgroundSize = "150px 200px";
+                document.getElementById("day1").style.backgroundImage = 'url('+backgroundImage1+')';
+                // image 2
+                let backgroundImage2 = myJson['results'][1]['urls']['regular'];
+                document.getElementById("day2").style.backgroundSize = "150px 200px";
+                document.getElementById("day2").style.backgroundImage = 'url('+backgroundImage2+')';
+                // image 3
+                let backgroundImage3 = myJson['results'][2]['urls']['regular'];
+                document.getElementById("day3").style.backgroundSize = "150px 200px";
+                document.getElementById("day3").style.backgroundImage = 'url('+backgroundImage3+')';
+                // image 4
+                let backgroundImage4 = myJson['results'][3]['urls']['regular'];
+                document.getElementById("day4").style.backgroundSize = "150px 200px";
+                document.getElementById("day4").style.backgroundImage = 'url('+backgroundImage4+')';
+                // image 5
+                let backgroundImage5 = myJson['results'][4]['urls']['regular'];
+                document.getElementById("day5").style.backgroundSize = "150px 200px";
+                document.getElementById("day5").style.backgroundImage = 'url('+backgroundImage5+')';
+
+
             });
 
 
