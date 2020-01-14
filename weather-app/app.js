@@ -79,10 +79,10 @@
       fetch('https://api.unsplash.com/search/photos?query='+ inpt + "&client_id="+ky)
             .then((response) => {
                 return response.json();
+
             })
             .then((myJson) => {
                 // Background images articles
-
 
 
 
