@@ -10,15 +10,15 @@
 </head>
 
 
-<body class="bg-light">
+<body class="bg-dark">
 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
 </video>
 <div id="weather"  class="text-center mt-5 mb-5">
     <div id="location"> </div>
-    <h1 id="temp">Weather</h1>
+    <h1 id="temp">MyWeather</h1>
     <input type="text" placeholder="Type A City" name="text" id="inp" />
-    <button type="button" id="run">Run the script</button>
+    <button type="button" id="run">search</button>
 
 
 
@@ -26,12 +26,12 @@
 
 
 
-
+<!-- Days -->
 <div  class="row justify-content-center mt-3 text-light">
-
+    <!-- 1 -->
     <article style="width: 150px; height: 200px;" id="day1"   class="day rounded p-3 m-3 " >
         <div class="textBox">
-        <h3>Day 1</h3>
+        <h3>Today</h3>
         <p id="description1"></p>
         <p id="temp1" class="temp"></p>
         </div>

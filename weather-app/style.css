@@ -11,13 +11,18 @@ h1{
     margin-top: -16px;
     margin-left: -16px;
     margin-right: -16px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.1);
 
 
 }
 #weather, article{
     z-index: 10;
 position: relative;
+
+}
+body{
+
+
 
 }
 video{
