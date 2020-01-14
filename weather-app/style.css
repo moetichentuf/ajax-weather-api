@@ -16,13 +16,13 @@ h1{
 
 }
 #weather, article{
-    z-index: 10;
+    z-index: 1;
 position: relative;
 
 }
 body{
 
-
+padding-top: 10%;
 
 }
 video{
@@ -30,7 +30,7 @@ video{
     width:100%;
     background-size: cover;
     transition: 1s opacity;
-    opacity: 0.5;
+
     position: absolute;
     top: 0;
     left: 0;
