@@ -21,7 +21,9 @@
 
                 let allTemp = [];
                 let beschrijving = [];
-// This will take the weather data as a parameter and insert it into div.
+
+
+                //for loop will get the info from api array
 
                 for (let i = 0; i < 40; i++) {
 
