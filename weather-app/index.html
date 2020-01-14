@@ -2,24 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Title</title>
 </head>
 
 
 <body>
 
-<div id="weather">
-
+<div id="weather"  class="text-center">
+    <span id="location"> </span>
     <h1 id="temp">Weather</h1>
     <input type="text" name="text" id="inp" />
     <button type="button" id="run">Run the script</button>
-    <div id="location"></div>
-    <article id="day1"  class="day bg-info rounded p-3 m-3">
-        <h3>Day 1</h3>
 
-        <p id="description1"></p>
-        <p id="temp1" class="temp"></p>
-    </article>
+
 
 </div>
 
@@ -28,6 +24,12 @@
 
 <div class="row justify-content-center mt-3">
 
+    <article id="day1"  class="day bg-info rounded p-3 m-3">
+        <h3>Day 1</h3>
+        <figure><img id="img1"></figure>
+        <p id="description1"></p>
+        <p id="temp1" class="temp"></p>
+    </article>
     <!-- 2 -->
     <article id="day2"  class="day bg-info rounded p-3 m-3">
         <h3>Day 2</h3>
@@ -57,6 +59,7 @@
         <p id="temp5" class="temp"></p>
     </article>
 </div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="app.js"></script>
 </body>
 </html>
