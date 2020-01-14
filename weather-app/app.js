@@ -1,5 +1,5 @@
 (() => {
-// got help from Thibeault and Wolf with getting stuff out the array
+// got help from Thibeault, Wolf and Samira with getting stuff out the array
     let averageTemp = array => Math.floor((array.reduce((a, b) => a + b, 0) / array.length));
 
     document.getElementById("run").addEventListener("click", function () {
@@ -32,7 +32,7 @@
                     //console.log(allTemp);
                     document.getElementById('description1').innerHTML = beschrijving;
 
-                    document.getElementById('location').innerHTML = data.name;
+                    document.getElementById('location').style = data.name;
 
                     let dayOne = allTemp.slice(0, 8);
                     let dayTwo = allTemp.slice(8, 16);
