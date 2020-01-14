@@ -74,12 +74,18 @@
         let ky = "fb61890e1a785b8d58a331dc8c156528c13123c10adcbda1b81fd451b15523b0";
 
 
-        fetch('https://api.unsplash.com/search/photos?query='+ inpt + "&client_id="+ky)
+      let lala =  fetch('https://api.unsplash.com/search/photos?query='+ inpt + "&client_id="+ky)
             .then((response) => {
                 return response.json();
             })
             .then((myJson) => {
-                console.log(myJson);
+                // Background images articles
+                let backgroundImage = myJson['results'][1]['urls']['regular'];
+                document.getElementById("day1").style.backgroundImage = 'url('+backgroundImage+')';
+                document.getElementById("day2").style.backgroundImage = 'url('+backgroundImage+')';
+                document.getElementById("day3").style.backgroundImage = 'url('+backgroundImage+')';
+                document.getElementById("day4").style.backgroundImage = 'url('+backgroundImage+')';
+                document.getElementById("day5").style.backgroundImage = 'url('+backgroundImage+')';
             });
 
 
