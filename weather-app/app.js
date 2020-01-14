@@ -86,7 +86,6 @@
 
 
 
-
                 // image 1
                 let backgroundImage1 = myJson['results'][0]['urls']['regular'];
                 document.getElementById("day1").style.backgroundSize = "150px 200px";
