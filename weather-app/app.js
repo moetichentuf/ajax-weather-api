@@ -83,8 +83,8 @@
             })
             .then((myJson) => {
                 // Background images articles
-                let img = [];
 
+// added for loop instead of typing array number for every background(still trying to get random images from array)
                 for (let i = 0; i < 40; i++) {
                     // image 1
                     let backgroundImage1 = myJson['results'][i++]['urls']['regular'];

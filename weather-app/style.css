@@ -1,7 +1,8 @@
 
 h1{
-
+   
    color: white;
+    font-family: 'Pacifico', cursive;
 
 }
 .textBox{
@@ -15,24 +16,28 @@ h1{
 
 
 }
-#weather, article{
+
+
+input, #run{
+    margin-top: 10px;
+    border-style: none  ;
+
+    border-radius: 50px;
+
+}
+
+article{
     z-index: 1;
-position: relative;
+    position: relative;
+    box-shadow: 7px 10px 10px #111111;
 
 }
-body{
 
+/*background-color: #2f56ff;*/
+#loo{
+background-color: #ffc82c;
 padding-top: 10%;
-
-}
-video{
-    background: #222;
-    width:100%;
-    background-size: cover;
-    transition: 1s opacity;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: auto;
+    height: auto;
 
 }
