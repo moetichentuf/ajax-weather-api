@@ -14,11 +14,6 @@
             })
 
             .then((data) => {
-
-
-                //console.log(data);
-
-
                 let allTemp = [];
                 let beschrijving = [];
 
@@ -56,7 +51,7 @@
                     document.getElementById("temp4").innerHTML = tempDayFour + " " + "&#8451";
                     document.getElementById("temp5").innerHTML = tempDayFive + " " + "&#8451";
 
-                    /* DESCRIPTIONS */
+
                     // Cutting all descriptions up in the 5 days
                     let descriptionDayOne = beschrijving.slice(0, 8);
                     let descriptionDayTwo = beschrijving.slice(8, 16);
@@ -84,28 +79,13 @@
             .then((myJson) => {
                 // Background images articles
 
-// added for loop instead of typing array number for every background(still trying to get random images from array)
+// simplified version of previous loop, going to try to simplify the rest of my code too.
                 for (let i = 0; i < 40; i++) {
                     // image 1
-                    let backgroundImage1 = myJson['results'][i++]['urls']['regular'];
-                    document.getElementById("day1").style.backgroundSize = "100% 100%";
-                    document.getElementById("day1").style.backgroundImage = 'url(' + backgroundImage1 + ')';
-                    // image 2
-                    let backgroundImage2 = myJson['results'][i++]['urls']['regular'];
-                    document.getElementById("day2").style.backgroundSize = "100% 100%";
-                    document.getElementById("day2").style.backgroundImage = 'url(' + backgroundImage2 + ')';
-                    // image 3
-                    let backgroundImage3 = myJson['results'][i++]['urls']['regular'];
-                    document.getElementById("day3").style.backgroundSize = "100% 100%";
-                    document.getElementById("day3").style.backgroundImage = 'url(' + backgroundImage3 + ')';
-                    // image 4
-                    let backgroundImage4 = myJson['results'][i++]['urls']['regular'];
-                    document.getElementById("day4").style.backgroundSize = "100% 100%";
-                    document.getElementById("day4").style.backgroundImage = 'url(' + backgroundImage4 + ')';
-                    // image 5
-                    let backgroundImage5 = myJson['results'][i++]['urls']['regular'];
-                    document.getElementById("day5").style.backgroundSize = "100% 100%";
-                    document.getElementById("day5").style.backgroundImage = 'url(' + backgroundImage5 + ')';
+                    let backgroundImage = myJson['results'][i]['urls']['regular'];
+                    document.getElementById("day" + i).style.backgroundSize = "100% 100%";
+                    document.getElementById("day" + i).style.backgroundImage = 'url(' + backgroundImage + ')';
+
                 }
 
             });
