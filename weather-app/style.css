@@ -1,8 +1,15 @@
 
+/*Removes blue border*/
+*:focus {outline:none !important}
+
+
+
 h1{
-   
+
+    text-shadow: 7px 10px 10px rgba(0, 0, 0, 0.99);
    color: white;
     font-family: 'Pacifico', cursive;
+
 
 }
 .textBox{
@@ -17,14 +24,23 @@ h1{
 
 }
 
+#run {
+    margin-top: 5%;
+    border-style: none;
+padding: 5px;
+    border-radius: 1px;
+    background-color: #2182ff;
+}
+input{
 
-input, #run{
-    margin-top: 10px;
     border-style: none  ;
+    padding: 3px;
+    border-radius: 100px;
+    width: 50%;
 
-    border-radius: 50px;
 
 }
+
 
 article{
     z-index: 1;
@@ -35,7 +51,7 @@ article{
 
 /*background-color: #2f56ff;*/
 #loo{
-background-color: #ffc82c;
+    background-color: #2182ff;
 padding-top: 10%;
     width: auto;
     height: auto;
