@@ -1,1 +1,1 @@
- https://moetichentuf.github.io/ajax-weather-api/
+https://moetichentuf.github.io/weather-api/
