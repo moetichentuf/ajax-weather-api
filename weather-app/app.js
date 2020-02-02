@@ -67,10 +67,10 @@
                     document.getElementById("description5").innerHTML = descriptionDayFive[3];
                 }
             });
-        let inpt = document.getElementById("inp").value;
+
         let ky = "fb61890e1a785b8d58a331dc8c156528c13123c10adcbda1b81fd451b15523b0";
 
-
+        let inpt = document.getElementById("inp").value;
       fetch('https://api.unsplash.com/search/photos?query='+ inpt + "&client_id="+ky)
             .then((response) => {
                 return response.json();
@@ -82,9 +82,9 @@
 // simplified version of previous loop, going to try to simplify the rest of my code too.
                 for (let i = 0; i < 40; i++) {
                     // image 1
-                    let backgroundImage = myJson['results'][i]['urls']['regular'];
-                    document.getElementById("day" + i).style.backgroundSize = "100% 100%";
-                    document.getElementById("day" + i).style.backgroundImage = 'url(' + backgroundImage + ')';
+                    let backgroundImage = myJson['results'][i++]['urls']['regular'];
+                    document.getElementById("day" + [i]).style.backgroundSize = "100% 100%";
+                    document.getElementById("day" + [i]).style.backgroundImage = 'url(' + backgroundImage + ')';
 
                 }
 
