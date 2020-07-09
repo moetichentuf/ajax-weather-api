@@ -80,14 +80,30 @@
                 // Background images articles
 
 // simplified version of previous loop, going to try to simplify the rest of my code too.
-                for (let i = 0; i < 40; i++) {
+
                     // image 1
-                    let backgroundImage = myJson['results'][i++]['urls']['regular'];
-                    document.getElementById("day" + [i]).style.backgroundSize = "100% 100%";
-                    document.getElementById("day" + [i]).style.backgroundImage = 'url(' + backgroundImage + ')';
+                    let backgroundImage1 = myJson['results'][0]['urls']['regular'];
 
-                }
+                let backgroundImage2 = myJson['results'][1]['urls']['regular'];
+                let backgroundImage3 = myJson['results'][2]['urls']['regular'];
+                let backgroundImage4 = myJson['results'][3]['urls']['regular'];
+                let backgroundImage5 = myJson['results'][4]['urls']['regular'];
 
+
+                document.getElementById("day1").style.backgroundSize = "100% 100%";
+                    document.getElementById("day1").style.backgroundImage = 'url(' + backgroundImage1 + ')';
+
+                    document.getElementById("day2").style.backgroundSize = "100% 100%";
+                    document.getElementById("day2").style.backgroundImage = 'url(' + backgroundImage2 + ')';
+
+                    document.getElementById("day3").style.backgroundSize = "100% 100%";
+                    document.getElementById("day3").style.backgroundImage = 'url(' + backgroundImage3 + ')';
+
+                    document.getElementById("day4").style.backgroundSize = "100% 100%";
+                    document.getElementById("day4").style.backgroundImage = 'url(' + backgroundImage4 + ')';
+
+                    document.getElementById("day5").style.backgroundSize = "100% 100%";
+                    document.getElementById("day5").style.backgroundImage = 'url(' + backgroundImage5 + ')';
             });
 
 
