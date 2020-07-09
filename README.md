@@ -1,1 +1,0 @@
-https://moetichentuf.github.io/weather-api/
